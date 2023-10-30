@@ -38,8 +38,8 @@
 		5003ED452AEF60B500D2641C /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003ED332AEF60B500D2641C /* AuthScreen.swift */; };
 		5003ED492AEF61C100D2641C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5003ED482AEF61C100D2641C /* FirebaseAuth */; };
 		5003ED4B2AEF61C100D2641C /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5003ED4A2AEF61C100D2641C /* FirebaseAuthCombine-Community */; };
-		502EA8212AEF62AF003E8E37 /* SwiftAuthProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 502EA8202AEF62AF003E8E37 /* SwiftAuthProxy */; };
-		502EA8232AEF62B2003E8E37 /* SwiftCommonLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 502EA8222AEF62B2003E8E37 /* SwiftCommonLibrary */; };
+		502EA8262AEF677A003E8E37 /* SwiftAuthProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 502EA8252AEF677A003E8E37 /* SwiftAuthProxy */; };
+		502EA8292AEF678A003E8E37 /* SwiftCommonLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 502EA8282AEF678A003E8E37 /* SwiftCommonLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +81,6 @@
 		5003ED302AEF60B500D2641C /* CreateAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		5003ED322AEF60B500D2641C /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		5003ED332AEF60B500D2641C /* AuthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
-		502EA81D2AEF629B003E8E37 /* SwiftAuthProxy */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftAuthProxy; path = ../../../Libraries/SwiftAuthProxy; sourceTree = "<group>"; };
-		502EA81E2AEF62A3003E8E37 /* SwiftCommonLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftCommonLibrary; path = ../../../Libraries/SwiftCommonLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +89,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5003ED492AEF61C100D2641C /* FirebaseAuth in Frameworks */,
-				502EA8232AEF62B2003E8E37 /* SwiftCommonLibrary in Frameworks */,
+				502EA8292AEF678A003E8E37 /* SwiftCommonLibrary in Frameworks */,
 				5003ED4B2AEF61C100D2641C /* FirebaseAuthCombine-Community in Frameworks */,
-				502EA8212AEF62AF003E8E37 /* SwiftAuthProxy in Frameworks */,
+				502EA8262AEF677A003E8E37 /* SwiftAuthProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +139,6 @@
 				5003ECF22AEF5F9F00D2641C /* Main.swift */,
 				5003ED1F2AEF601300D2641C /* Application */,
 				5003ED462AEF60B800D2641C /* Screens */,
-				502EA81C2AEF6291003E8E37 /* Packages */,
 				5003ECF62AEF5FA100D2641C /* Assets.xcassets */,
 				5003ECF82AEF5FA100D2641C /* Preview Content */,
 			);
@@ -247,15 +244,6 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		502EA81C2AEF6291003E8E37 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				502EA81E2AEF62A3003E8E37 /* SwiftCommonLibrary */,
-				502EA81D2AEF629B003E8E37 /* SwiftAuthProxy */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		502EA81F2AEF62AF003E8E37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,8 +270,8 @@
 			packageProductDependencies = (
 				5003ED482AEF61C100D2641C /* FirebaseAuth */,
 				5003ED4A2AEF61C100D2641C /* FirebaseAuthCombine-Community */,
-				502EA8202AEF62AF003E8E37 /* SwiftAuthProxy */,
-				502EA8222AEF62B2003E8E37 /* SwiftCommonLibrary */,
+				502EA8252AEF677A003E8E37 /* SwiftAuthProxy */,
+				502EA8282AEF678A003E8E37 /* SwiftCommonLibrary */,
 			);
 			productName = AuthProject;
 			productReference = 5003ECEF2AEF5F9F00D2641C /* AuthProject.app */;
@@ -359,6 +347,8 @@
 			mainGroup = 5003ECE62AEF5F9F00D2641C;
 			packageReferences = (
 				5003ED472AEF61C100D2641C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				502EA8242AEF677A003E8E37 /* XCRemoteSwiftPackageReference "SwiftAuthProxy" */,
+				502EA8272AEF678A003E8E37 /* XCRemoteSwiftPackageReference "SwiftCommonLibrary" */,
 			);
 			productRefGroup = 5003ECF02AEF5F9F00D2641C /* Products */;
 			projectDirPath = "";
@@ -771,6 +761,22 @@
 				minimumVersion = 10.16.0;
 			};
 		};
+		502EA8242AEF677A003E8E37 /* XCRemoteSwiftPackageReference "SwiftAuthProxy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/macward/SwiftAuthProxy.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		502EA8272AEF678A003E8E37 /* XCRemoteSwiftPackageReference "SwiftCommonLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/macward/SwiftCommonLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -784,12 +790,14 @@
 			package = 5003ED472AEF61C100D2641C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseAuthCombine-Community";
 		};
-		502EA8202AEF62AF003E8E37 /* SwiftAuthProxy */ = {
+		502EA8252AEF677A003E8E37 /* SwiftAuthProxy */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 502EA8242AEF677A003E8E37 /* XCRemoteSwiftPackageReference "SwiftAuthProxy" */;
 			productName = SwiftAuthProxy;
 		};
-		502EA8222AEF62B2003E8E37 /* SwiftCommonLibrary */ = {
+		502EA8282AEF678A003E8E37 /* SwiftCommonLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 502EA8272AEF678A003E8E37 /* XCRemoteSwiftPackageReference "SwiftCommonLibrary" */;
 			productName = SwiftCommonLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

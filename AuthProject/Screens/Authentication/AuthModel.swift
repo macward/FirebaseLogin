@@ -29,11 +29,9 @@ class AuthModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String = ""
     
-    @AppStorage("waiting_email_confirmation") var waitingEmailConfirm: Bool = false
-    
     private var publishers = Set<AnyCancellable>()
     private var emailValidator = EmailValidator()
-    private var passwordValidator = NotEmptyValidator() //PasswordValidator()
+    private var passwordValidator = PasswordValidator()
     
     public init(service: AuthenticationService) {
         self.service = service
